@@ -19,21 +19,19 @@ declare(strict_types=1);
 | Defines the lifecycle contract for Phoenix service providers.
 */
 
+declare(strict_types=1);
+
 namespace Phoenix\Application\Contracts;
 
 interface ProviderContract
 {
     /**
-     * Register services into the application.
+     * Register services.
      */
-    public function register(
-        ApplicationContract $application
-    ): void;
+    public function register(): void;
 
     /**
-     * Boot the provider.
+     * Boot services.
      */
-    public function boot(
-        ApplicationContract $application
-    ): void;
+    public function boot(): void;
 }

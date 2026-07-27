@@ -19,6 +19,8 @@ declare(strict_types=1);
 | Defines the public contract for the Phoenix Application.
 */
 
+declare(strict_types=1);
+
 namespace Phoenix\Application\Contracts;
 
 use Phoenix\Container\Contracts\ContainerContract;
@@ -27,10 +29,10 @@ interface ApplicationContract
 {
     /**
      * Register a service provider.
+     *
+     * @param class-string<ProviderContract> $provider
      */
-    public function register(
-        ProviderContract $provider
-    ): void;
+    public function register(string $provider): void;
 
     /**
      * Boot the application.
