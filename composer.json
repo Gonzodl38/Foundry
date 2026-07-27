@@ -1,0 +1,43 @@
+{
+    "name": "phoenix/framework",
+    "description": "Phoenix Framework",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "framework",
+        "php",
+        "phoenix"
+    ],
+    "homepage": "https://github.com/Gonzodl38/phoenix-foundry",
+    "authors": [
+        {
+            "name": "Gonzalo Muñoz"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phoenix\\": "Phoenix/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phoenix\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "lint": [
+            "php -l Phoenix/Application/Application.php",
+            "php -l Phoenix/Application/Services/ApplicationService.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
