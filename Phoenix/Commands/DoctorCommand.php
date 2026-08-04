@@ -33,10 +33,10 @@ final class DoctorCommand implements Command
         return Result::success(
             'Repository healthy.',
             [
-                'php_version' => PHP_VERSION,
-                'os'          => PHP_OS_FAMILY,
-                'cwd'         => getcwd(),
-                'status'      => 'HEALTHY'
+                'PHP Version      ' => PHP_VERSION,
+                'Operating System ' => PHP_OS_FAMILY,
+                'Working Directory' => getcwd(),
+                'status'            => 'HEALTHY'
             ]
         );
     }
