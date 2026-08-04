@@ -1,0 +1,41 @@
+{
+  "directories": {
+      "required": [
+          "Phoenix",
+          "Phoenix/Application",
+          "Phoenix/Bootstrap",
+          "Phoenix/CLI",
+          "Phoenix/Commands",
+          "Phoenix/Configuration",
+          "Phoenix/Container",
+          "Phoenix/Foundry",
+          "Phoenix/Kernel",
+          "Phoenix/Products",
+          "Phoenix/Releases",
+          "Phoenix/Reports",
+          "Phoenix/Support",
+          "Phoenix/Workspace",
+          "docs",
+          "tools",
+          "vendor"
+      ]
+  },
+  "renames": [
+      {
+          "from": "docs/Governance",
+          "to": "docs/governance"
+      },
+      {
+          "from": "docs/Guides",
+          "to": "docs/guides"
+      },
+      {
+          "from": "docs/Reference",
+          "to": "docs/reference"
+      },
+      {
+          "from": "docs/specification",
+          "to": "docs/specifications"
+      }
+  ]
+}

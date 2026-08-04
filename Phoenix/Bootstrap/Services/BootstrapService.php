@@ -8,6 +8,7 @@ use Phoenix\Application\Application;
 use Phoenix\Application\Contracts\ApplicationContract;
 use Phoenix\Bootstrap\Contracts\BootstrapContract;
 use Phoenix\Bootstrap\Providers\CoreProvider;
+use Phoenix\Engines\Activity\Providers\ActivityServiceProvider;
 
 final class BootstrapService implements BootstrapContract
 {
@@ -36,6 +37,8 @@ final class BootstrapService implements BootstrapContract
     {
         return [
             CoreProvider::class,
+    
+            ActivityServiceProvider::class,
         ];
     }
 }

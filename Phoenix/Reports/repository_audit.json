@@ -1,0 +1,89 @@
+{
+    "directories": [
+        {
+            "path": "Phoenix",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Application",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Bootstrap",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/CLI",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Commands",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Configuration",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Container",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Foundry",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Kernel",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Products",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Releases",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Reports",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Support",
+            "status": "PASS"
+        },
+        {
+            "path": "Phoenix/Workspace",
+            "status": "PASS"
+        },
+        {
+            "path": "docs",
+            "status": "PASS"
+        },
+        {
+            "path": "tools",
+            "status": "PASS"
+        },
+        {
+            "path": "vendor",
+            "status": "PASS"
+        }
+    ],
+    "files": [
+        {
+            "path": "composer.json",
+            "status": "PASS"
+        },
+        {
+            "path": "tools/phoenix.php",
+            "status": "PASS"
+        }
+    ],
+    "warnings": [
+        "Duplicate: docs/Governance / docs/governance",
+        "Duplicate: docs/Guides / docs/guides",
+        "Duplicate: docs/Reference / docs/reference",
+        "Rename recommended: docs/specification -> docs/specifications"
+    ],
+    "result": "PASS"
+}

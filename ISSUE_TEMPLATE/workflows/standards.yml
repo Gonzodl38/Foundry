@@ -1,0 +1,17 @@
+name: Standards Verification
+
+on:
+
+  pull_request:
+
+jobs:
+
+  verify:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - run: php tools/phoenix.php verify

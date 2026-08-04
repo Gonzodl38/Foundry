@@ -17,6 +17,9 @@
     "require": {
         "php": "^8.2"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
     "autoload": {
         "psr-4": {
             "Phoenix\\": "Phoenix/"
@@ -28,7 +31,22 @@
         }
     },
     "scripts": {
-        "test": "phpunit",
+        "test": "php vendor/bin/phpunit -c phpunit.xml.dist",
+        "smoke": [
+            "@smoke:artifact-id",
+            "@smoke:artifact-type",
+            "@smoke:artifact-status",
+            "@smoke:artifact",
+            "@smoke:artifact-factory",
+            "@smoke:artifact-repository"
+        ],
+        "smoke:artifact": "php Phoenix/Tests/ArtifactTest.php",
+        "smoke:artifact-id": "php Phoenix/Tests/artifact_id_test.php",
+        "smoke:artifact-type": "php Phoenix/Tests/ArtifactTypeTest.php",
+        "smoke:artifact-status": "php Phoenix/Tests/ArtifactStatusTest.php",
+        "smoke:artifact-factory": "php Phoenix/Tests/ArtifactFactoryTest.php",
+        "smoke:artifact-repository": "php Phoenix/Tests/ArtifactRepositoryTest.php",
+
         "lint": [
             "php -l Phoenix/Application/Application.php",
             "php -l Phoenix/Application/Services/ApplicationService.php"
